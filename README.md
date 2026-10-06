@@ -20,7 +20,14 @@ CPN SUPPLY INFINITY LIMITED PARTNERSHIP
 - `image/` — ภาพหน้าปกและผลงานจริง
 - `fonts/` — IBM Plex Sans Thai และใบอนุญาต OFL
 
-## Vercel
+## Netlify
+
+ใช้ Netlify Free สำหรับเว็บไซต์ธุรกิจได้ โดยอยู่ภายใต้โควตาของแพ็กเกจ
+นำเข้า repository `fluke097/cpn-supply-infinity` และเลือก branch `main`
+ไฟล์ `netlify.toml` กำหนด build command เป็น `node build-static.cjs` และ publish directory เป็น `dist`
+สคริปต์จะคัดลอกเฉพาะไฟล์เว็บไซต์ รูปภาพ และฟอนต์ เพื่อไม่เผยแพร่ไฟล์ทดสอบหรือไฟล์เครื่องมือ
+
+## Vercel (โฮสต์เดิม)
 
 นำเข้า repository `fluke097/cpn-supply-infinity` ในทีม `sara-dcff`
 ใช้ Framework Preset **Other** และ Root Directory เป็นรากของ repository
