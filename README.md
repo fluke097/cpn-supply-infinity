@@ -20,6 +20,13 @@ CPN SUPPLY INFINITY LIMITED PARTNERSHIP
 - `image/` — ภาพหน้าปกและผลงานจริง
 - `fonts/` — IBM Plex Sans Thai และใบอนุญาต OFL
 
+## Vercel
+
+นำเข้า repository `fluke097/cpn-supply-infinity` ในทีม `sara-dcff`
+ใช้ Framework Preset **Other** และ Root Directory เป็นรากของ repository
+โปรเจ็กต์กำหนด `vercel.json` ให้เผยแพร่ไฟล์ static โดยไม่ต้อง install หรือ build
+เมื่อเชื่อมต่อ GitHub แล้ว การ push ไป branch `main` จะสร้าง deployment ใหม่
+
 ## GitHub Pages
 
 หากต้องการเผยแพร่เว็บไซต์ผ่าน GitHub Pages หลังอัปโหลด repository:

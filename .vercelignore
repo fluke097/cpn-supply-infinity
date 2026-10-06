@@ -1,0 +1,10 @@
+.git/
+.vercel/
+node_modules/
+.env
+.env.*
+preview-*.png
+verify.cjs
+Data.txt
+README.md
+*.log

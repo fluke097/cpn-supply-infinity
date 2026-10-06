@@ -5,6 +5,7 @@ Data.txt
 
 # Local tools, dependencies, and credentials
 node_modules/
+.vercel/
 .env
 .env.*
 !.env.example
