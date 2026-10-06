@@ -1,0 +1,13 @@
+# Local previews and verification script with machine-specific runtime paths
+preview-*.png
+verify.cjs
+Data.txt
+
+# Local tools, dependencies, and credentials
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
