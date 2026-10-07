@@ -35,3 +35,14 @@ footer{background:#dce1e7;color:#526174}
 @media(max-width:380px){.service-card h3{font-size:19px}}
 
 .services .section-heading>div>.eyebrow:before{background:#b4c4d6}
+.contact>.contact-layout{grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.contact-details h2{margin-top:14px;font-weight:600}
+.contact-intro{color:#b9c7d7;font-size:14px;line-height:1.9;margin:16px 0 12px}
+.contact-links>a{min-width:0}.contact-links>a>span:nth-child(2){min-width:0}.contact-links strong{overflow-wrap:anywhere}
+.contact-symbol{flex-shrink:0}.social-symbol{font-size:11px;font-weight:600}.social-symbol:last-child{font-size:20px}
+.contact-location{background:#14283f;border:1px solid #344b65;border-radius:14px;padding:26px}
+.location-heading{display:flex;align-items:center;gap:14px}.location-heading small{font-size:10px;color:#b9c7d7;letter-spacing:1.5px}.location-heading h3{margin:2px 0 0;font-size:21px;font-weight:500}
+.location-address{font-size:15px;color:#d7e1ec;line-height:1.9;margin:18px 0}
+.map-frame{height:255px;border-radius:9px;overflow:hidden;background:#ccd4df;border:1px solid #53677f}.map-frame iframe{display:block;width:100%;height:100%;border:0}
+.map-button{display:flex;margin-top:18px;background:#d4dfe9;color:#11243d;border-color:#d4dfe9;border-radius:9px;justify-content:space-between}.map-button:hover{background:#eef3f8}
+@media(max-width:760px){.contact>.contact-layout{grid-template-columns:1fr;gap:30px}.contact-location{padding:20px}.map-frame{height:240px}.contact-intro{font-size:14px}.location-address{font-size:14px}}

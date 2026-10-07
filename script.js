@@ -37,9 +37,5 @@ lightbox.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){currentImage++;
 const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('#navigation');
 toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'ปิดเมนู':'เปิดเมนู');toggle.textContent=open?'✕':'☰'});
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','เปิดเมนู');toggle.textContent='☰'}));
-document.querySelector('#copy-line').addEventListener('click',async()=>{
-  const status=document.querySelector('#copy-status');
-  try{await navigator.clipboard.writeText('Test_System');status.textContent='คัดลอก LINE ID แล้ว: Test_System'}catch{status.textContent='LINE ID: Test_System — เลือกข้อความเพื่อคัดลอก';const range=document.createRange();range.selectNodeContents(document.querySelector('.line-row strong'));const selection=window.getSelection();selection.removeAllRanges();selection.addRange(range)}
-});
 document.querySelector('#year').textContent=new Date().getFullYear();render();
 
