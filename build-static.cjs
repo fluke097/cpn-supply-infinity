@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const destination = path.join(__dirname, 'dist');
 fs.mkdirSync(destination, { recursive: true });
-for (const file of ['index.html', 'style.css', 'design.css', 'layout.css', 'script.js']) {
+for (const file of ['index.html', 'style.css', 'design.css', 'layout.css', 'theme.css', 'script.js']) {
   fs.copyFileSync(path.join(__dirname, file), path.join(destination, file));
 }
 for (const folder of ['image', 'fonts', 'logo']) {
