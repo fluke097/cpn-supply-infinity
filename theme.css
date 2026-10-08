@@ -1,35 +1,35 @@
 /* Deep navy and slate palette, with services as the main visual focus. */
-:root{--blue:#263c55;--navy:#1b2e45;--ink:#13243a;--muted:#536174;--line:#bdc6d1;--gray:#dce1e7}
+:root{--blue:#11243d;--navy:#09182c;--ink:#13243a;--muted:#536174;--line:#bdc6d1;--gray:#dce1e7}
 body{background:#dce1e7}
 .header{background:#dce1e7;border-bottom:1px solid #bdc6d1}
 .hero{background:linear-gradient(115deg,#dce1e7,#cbd3de);border-bottom:1px solid #bac5d2}
 .hero .eyebrow{background:#cbd4df;border-color:#b2bfce;color:#142c48}
 .hero-copy>p{color:#46566b}h1>span{color:#263f5c}
-.hero-visual{border-color:#aebccd;box-shadow:0 20px 44px #1b2e4520}
+.hero-visual{border-color:#aebccd;box-shadow:0 20px 44px #09182c20}
 .hero-note{color:#4a596d}.check{background:#bdcbd9;color:#17324f}
-.primary,.nav-contact,.outline,.light{background:#263c55;color:#f5f7fa;border-color:#263c55;box-shadow:0 6px 16px #1b2e4520}
-.primary:hover,.nav-contact:hover,.outline:hover,.light:hover{background:#344e69;border-color:#344e69;color:#fff}
-.services{max-width:none;padding-left:max(40px,calc((100vw - 1200px)/2));padding-right:max(40px,calc((100vw - 1200px)/2));background:#1b2e45;color:#f5f7fa;border-bottom:1px solid #3a5069}
+.primary,.nav-contact,.outline,.light{background:#11243d;color:#f5f7fa;border-color:#11243d;box-shadow:0 6px 16px #09182c20}
+.primary:hover,.nav-contact:hover,.outline:hover,.light:hover{background:#243e5a;border-color:#243e5a;color:#fff}
+.services{max-width:none;padding-left:max(40px,calc((100vw - 1200px)/2));padding-right:max(40px,calc((100vw - 1200px)/2));background:#09182c;color:#f5f7fa;border-bottom:1px solid #263b54}
 .services .eyebrow{color:#b4c4d6}.services .eyebrow:before{background:#b4c4d6}
 .services h2{font-size:40px}.services .muted{color:#aabbd0}.services .section-heading>p{color:#b8c5d5}
-.service-card{background:#2a4059;border:1px solid #465d76;border-top:3px solid #6c829c;box-shadow:0 12px 24px #020b171c}
-.service-card:hover{background:#344e69;border-color:#90a5bc;box-shadow:0 16px 32px #020b1738}
+.service-card{background:#14283f;border:1px solid #344b65;border-top:3px solid #6c829c;box-shadow:0 12px 24px #020b171c}
+.service-card:hover{background:#1b324d;border-color:#90a5bc;box-shadow:0 16px 32px #020b1738}
 .service-icon{background:#d2dce6;color:#142c48}.card-top>span:last-child{color:#859bb3}
 .service-card>small{color:#aebfd2}.service-card h3{color:#f5f7fa;font-size:23px}
 .service-card ul{color:#c3cedc;font-size:14px}.service-card li:before{color:#aebfd2}
 .service-card>a{color:#eef3f8;border-color:#40546c}.service-card>a:hover{color:#fff}
 .projects{background:#d1d8e1;border-color:#bac5d2}.muted{color:#54677f}
 .filters button{background:#bac6d4;color:#172e49;border-color:#a4b3c4}
-.filters button.active,.filters button:hover{background:#263c55;color:#f5f7fa;border-color:#263c55;box-shadow:none}
-.project-card{background:#e4e8ee;border-color:#b7c3d1}.project-card:hover{box-shadow:0 12px 28px #1b2e4520}
-.project-photo>span{background:#263c55;color:#f5f7fa}.project-info small{color:#304b68}
-.contact{background:#20334b}.contact .eyebrow,.contact h2 span{color:#b6c6d8}
+.filters button.active,.filters button:hover{background:#11243d;color:#f5f7fa;border-color:#11243d;box-shadow:none}
+.project-card{background:#e4e8ee;border-color:#b7c3d1}.project-card:hover{box-shadow:0 12px 28px #09182c20}
+.project-photo>span{background:#11243d;color:#f5f7fa}.project-info small{color:#304b68}
+.contact{background:#0c1d32}.contact .eyebrow,.contact h2 span{color:#b6c6d8}
 .contact-copy>p,.contact-links small,.company-english{color:#b9c7d7}
-.contact-symbol{background:#3c536d;color:#e3ebf3;border-color:#425772}
-.contact .light{background:#3c536d;border-color:#526981;color:#fff}.contact .light:hover{background:#49627d}
+.contact-symbol{background:#263d58;color:#e3ebf3;border-color:#425772}
+.contact .light{background:#263e5a;border-color:#526981;color:#fff}.contact .light:hover{background:#38536f}
 .line-row>button,#copy-status{color:#dae5ef}
 footer{background:#dce1e7;color:#526174}
-.menu-toggle{background:#263c55;color:#fff;border-color:#263c55}
+.menu-toggle{background:#11243d;color:#fff;border-color:#11243d}
 @media(max-width:1100px){.services{padding-left:30px;padding-right:30px}}
 @media(max-width:760px){.services{padding-left:22px;padding-right:22px}.services h2{font-size:31px}.service-card h3{font-size:21px}nav{background:#dce1e7;border-color:#bdc6d1}.service-card ul{font-size:14px}}
 @media(max-width:380px){.service-card h3{font-size:19px}}
@@ -40,9 +40,10 @@ footer{background:#dce1e7;color:#526174}
 .contact-intro{color:#b9c7d7;font-size:14px;line-height:1.9;margin:16px 0 12px}
 .contact-links>a{min-width:0}.contact-links>a>span:nth-child(2){min-width:0}.contact-links strong{overflow-wrap:anywhere}
 .contact-symbol{flex-shrink:0}.social-symbol{font-size:11px;font-weight:600}.social-symbol:last-child{font-size:20px}
-.contact-location{background:#2a4059;border:1px solid #465d76;border-radius:14px;padding:26px}
+.contact-location{background:#14283f;border:1px solid #344b65;border-radius:14px;padding:26px}
 .location-heading{display:flex;align-items:center;gap:14px}.location-heading small{font-size:10px;color:#b9c7d7;letter-spacing:1.5px}.location-heading h3{margin:2px 0 0;font-size:21px;font-weight:500}
 .location-address{font-size:15px;color:#d7e1ec;line-height:1.9;margin:18px 0}
 .map-frame{height:255px;border-radius:9px;overflow:hidden;background:#ccd4df;border:1px solid #53677f}.map-frame iframe{display:block;width:100%;height:100%;border:0}
-.map-button{display:flex;margin-top:18px;background:#d4dfe9;color:#263c55;border-color:#d4dfe9;border-radius:9px;justify-content:space-between}.map-button:hover{background:#eef3f8}
+.map-button{display:flex;margin-top:18px;background:#d4dfe9;color:#11243d;border-color:#d4dfe9;border-radius:9px;justify-content:space-between}.map-button:hover{background:#eef3f8}
 @media(max-width:760px){.contact>.contact-layout{grid-template-columns:1fr;gap:30px}.contact-location{padding:20px}.map-frame{height:240px}.contact-intro{font-size:14px}.location-address{font-size:14px}}
+.contact-email{display:flex;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid #ffffff20;min-width:0}.contact-email>span:last-child{min-width:0}@media(max-width:760px){.contact-email{gap:14px;padding:16px 0}}
