@@ -30,3 +30,7 @@ toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');tog
 nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','เปิดเมนู');toggle.textContent='☰'}));
 document.querySelector('#year').textContent=new Date().getFullYear();render();
 
+
+const lineContact=document.querySelector('#line-contact');
+const mobileLine=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+if(mobileLine){lineContact.href='https://line.me/ti/p/IILTA3-ED4';lineContact.removeAttribute('target')} 
