@@ -47,3 +47,8 @@ footer{background:#dce1e7;color:#526174}
 .map-button{display:flex;margin-top:18px;background:#d4dfe9;color:#11243d;border-color:#d4dfe9;border-radius:9px;justify-content:space-between}.map-button:hover{background:#eef3f8}
 @media(max-width:760px){.contact>.contact-layout{grid-template-columns:1fr;gap:30px}.contact-location{padding:20px}.map-frame{height:240px}.contact-intro{font-size:14px}.location-address{font-size:14px}}
 .contact-email{display:flex;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid #ffffff20;min-width:0}.contact-email>span:last-child{min-width:0}@media(max-width:760px){.contact-email{gap:14px;padding:16px 0}}
+.project-info h3{font-size:22px}.project-info p{font-size:13px;line-height:1.8;min-height:24px}.album-action{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #bbc7d5;margin-top:18px;padding-top:14px;font-size:12px;color:#11243d;font-weight:500}
+.project-photo>.album-count{width:auto;height:auto;line-height:1.6;padding:6px 12px;border-radius:7px;background:#11243de8;color:#fff;font-size:11px}
+dialog{padding:20px;width:1100px}dialog>img{height:60vh}.lightbox-caption{min-height:58px}.lightbox-caption p{font-size:13px}
+#album-thumbnails{display:flex;gap:8px;overflow-x:auto;padding:4px 0 8px}#album-thumbnails button{flex:0 0 68px;height:52px;border:2px solid transparent;padding:0;background:#263e5a;border-radius:6px;overflow:hidden}#album-thumbnails button[aria-pressed=true]{border-color:#c0d6f0}#album-thumbnails img{display:block;width:100%;height:100%;object-fit:cover}.album-empty{grid-column:1/-1;color:#536174}
+@media(max-width:760px){dialog{padding:12px}dialog>img{height:52vh}.lightbox-caption p{font-size:11px}.project-info h3{font-size:21px}}

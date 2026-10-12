@@ -16,7 +16,7 @@ CPN SUPPLY INFINITY LIMITED PARTNERSHIP
 - `style.css` — รูปแบบพื้นฐาน
 - `design.css` — ฟอนต์และธีมสีน้ำเงิน–เทา
 - `layout.css` — สัดส่วนและรูปแบบ responsive ปัจจุบัน
-- `script.js` — แกลเลอรี เมนูมือถือ และคัดลอก LINE ID
+- `script.js` — แกลเลอรี เมนูมือถือ และอัลบั้มผลงาน
 - `image/` — ภาพหน้าปกและผลงานจริง
 - `fonts/` — IBM Plex Sans Thai และใบอนุญาต OFL
 
@@ -45,3 +45,22 @@ CPN SUPPLY INFINITY LIMITED PARTNERSHIP
 ## ฟอนต์
 
 IBM Plex Sans Thai จาก Google Fonts ใช้ภายใต้ SIL Open Font License ดู `fonts/OFL.txt`
+
+## เพิ่มผลงานใหม่
+
+จัดภาพเป็น `image/<หมวด>/<ชื่องาน>/` เช่น `image/Air/งานที่3/` หนึ่งโฟลเดอร์เป็นหนึ่งอัลบั้ม
+รองรับ JPG, JPEG, PNG, WebP และ AVIF รวมทั้งรูปในโฟลเดอร์ย่อย
+รัน `node build-static.cjs` เพื่อสร้างข้อมูลอัลบั้มและไฟล์เว็บไซต์ใน `dist/`
+เมื่อ commit และ push รูปใหม่ขึ้น GitHub Netlify จะสร้างข้อมูลและเผยแพร่อัตโนมัติ
+ไฟล์ในเครื่องเพียงอย่างเดียวยังไม่ถูกส่งไปเว็บไซต์
+
+ภาพแรกตามลำดับชื่อไฟล์จะเป็นภาพปก สามารถเลือกเองและตั้งชื่อให้ลูกค้าอ่านง่ายด้วย `project.json` ในโฟลเดอร์งาน (ไม่จำเป็น):
+
+```json
+{"title":"ติดตั้งเครื่องปรับอากาศสำนักงาน","description":"งานติดตั้งและเดินระบบท่อ","cover":"cover.jpg","published":true}
+```
+
+ตั้ง `published` เป็น `false` เพื่อซ่อนงาน และโฟลเดอร์ที่ไม่มีรูปจะไม่แสดง
+หมวดที่รองรับ: Power, Air, Sola, Firefighting, Test_power และ CCTV
+ข้อมูล `projects-data.js` สร้างโดย `generate-projects.cjs` ไม่ควรแก้รายชื่อภาพในไฟล์นี้โดยตรง
+ก่อนเปิด index.html ในเครื่องให้รัน `node generate-projects.cjs` หลังเพิ่มหรือย้ายรูป
