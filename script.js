@@ -33,4 +33,4 @@ document.querySelector('#year').textContent=new Date().getFullYear();render();
 
 const lineContact=document.querySelector('#line-contact');
 const mobileLine=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
-if(mobileLine){lineContact.href='https://line.me/ti/p/IILTA3-ED4';lineContact.removeAttribute('target')} 
+if(mobileLine){lineContact.href='https://line.me/R/ti/p/%40900qsooq';lineContact.removeAttribute('target')} 
